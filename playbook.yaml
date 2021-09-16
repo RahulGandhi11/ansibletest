@@ -4,7 +4,7 @@
     user: joe
     package: vsftpd
   tasks:
-    - name: add a user "{{ users }}"
+    - name: add a user "{{ user }}"
       user:
        name: "{{ users }}"
 
