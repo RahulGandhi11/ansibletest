@@ -8,7 +8,7 @@
       user:
        name: "{{ user }}"
 
-    - name: Remove package httpd
+    - name: Remove package "{{ package }}"
       package:
         name: "{{ package }}"
         state: latest
