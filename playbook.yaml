@@ -6,7 +6,7 @@
   tasks:
     - name: add a user "{{ user }}"
       user:
-       name: "{{ users }}"
+       name: "{{ user }}"
 
     - name: Remove package httpd
       package:
