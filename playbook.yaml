@@ -1,0 +1,15 @@
+- hosts: all
+  gather_facts: yes
+  vars:
+    user: joe
+    package: vsftpd
+  tasks:
+    - name: add a user "{{ users }}"
+      user:
+       name: "{{ users }}"
+
+    - name: Remove package httpd
+      package:
+        name: "{{ package }}"
+        state: latest
+      register: result
