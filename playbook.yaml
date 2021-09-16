@@ -2,7 +2,7 @@
   gather_facts: yes
   vars:
     user: joe
-    package: vsftpd
+    package: httpd
   tasks:
     - name: add a user "{{ user }}"
       user:
